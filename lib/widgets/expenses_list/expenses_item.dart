@@ -1,4 +1,6 @@
 import 'package:expanse_tracker/models/expense.dart';
+import 'package:expanse_tracker/style/date_style.dart';
+import 'package:expanse_tracker/style/text_style.dart';
 import 'package:flutter/material.dart';
 
 class ExpensesItem extends StatelessWidget {
@@ -21,13 +23,19 @@ class ExpensesItem extends StatelessWidget {
             const SizedBox(height: 4),
             Row(
               children: [
-                Text("\$${expense.amount.toStringAsFixed(2)}"),
+                Text(
+                  "\$${expense.amount.toStringAsFixed(2)}",
+                  style: myTextStyle,
+                ),
                 const Spacer(),
                 Row(
                   children: [
                     Icon(categoryIcons[expense.category]),
                     const SizedBox(width: 8),
-                    Text(expense.formattedDate)
+                    Text(
+                      expense.formattedDate,
+                      style: dateStyle,
+                    )
                   ],
                 )
               ],
