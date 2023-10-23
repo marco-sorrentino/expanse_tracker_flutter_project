@@ -85,7 +85,9 @@ class _NewExpenseState extends State<NewExpense> {
 /*         print(constraints.minHeight);
         print(constraints.maxHeight);
         print(constraints.minWidth);
-        print(constraints.maxWidth); */
+        print(constraints.maxWidth); 
+        watch che available space
+        */
         final width = constraints.maxWidth;
 
         return SizedBox(
