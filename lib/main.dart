@@ -1,11 +1,17 @@
 import 'package:expanse_tracker/widgets/expenses.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 var kColorScheme = ColorScheme.fromSeed(
   seedColor: const Color.fromARGB(255, 59, 96, 181),
 );
 
 void main() {
+/*   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]).then(
+    (fn) => { */
   runApp(
     MaterialApp(
       theme: ThemeData().copyWith(
